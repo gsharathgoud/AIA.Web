@@ -1,0 +1,11 @@
+{
+  "*.{js,jsx,ts,tsx,css,scss,md}": [
+    "nx format:write --uncommitted"
+  ],
+  "*.{js,jsx,ts,tsx}": [
+    "nx affected --target=lint  --uncommitted"
+  ],
+  "*.{css,scss}": [
+    "nx affected --target=stylelint --uncommitted"
+  ]
+}

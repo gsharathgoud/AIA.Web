@@ -1,0 +1,26 @@
+<div class="reports">
+  <div class="header">
+    <div class="title">Power BI Embedded Angular Component demo</div>
+  </div>
+  <div class="controls" *ngIf="isEmbedded; else embedReportFlow">
+    <button (click)="hideFilterPane()">Hide Filter Pane</button>
+    <button (click)="setDataSelectedEvent()">Set Event</button>
+    <div class="display-message" #status>{{ displayMessage }}</div>
+  </div>
+  <ng-template #embedReportFlow>
+    <div class="display-message" #status>
+      <label>{{ displayMessage }}</label>
+    </div>
+    <div class="embed-report">
+      <button (click)="embedReport()" id="embed-action" #embedReportBtn>Embed Report</button>
+    </div>
+    <div class="separator"></div>
+  </ng-template>
+  <powerbi-report
+    [embedConfig]="reportConfig"
+    [cssClassName]="reportClass"
+    [phasedEmbedding]="phasedEmbeddingFlag"
+    [eventHandlers]="eventHandlersMap"
+  >
+  </powerbi-report>
+</div>

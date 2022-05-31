@@ -1,0 +1,6 @@
+{
+  "PBI": "Welcome to Alliant {{value}}",
+  "globalFilters": "{{value}}",
+  "type": "{{value}}",
+  "company": "{{value}}"
+}

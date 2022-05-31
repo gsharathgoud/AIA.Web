@@ -1,0 +1,14 @@
+/* global styles goes here */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

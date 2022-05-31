@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files in the correct order */
+
+// import root directories
+@use './helpers/helpers-root';
+@use './base/base-root';
+@use './pages/pages-root';
+@use './modules/modules-root';
+
+// import print styles
+@use 'print';

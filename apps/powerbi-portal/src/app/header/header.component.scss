@@ -1,0 +1,59 @@
+/* header styles */
+
+:host {
+  display: block;
+  margin: 50px auto;
+  font-family: sans-serif;
+}
+
+.gutter-left {
+  margin-left: 9px;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+header {
+  padding: 5px;
+  background-color: #032e42;
+  border-radius: 3px;
+  color: white;
+}
+
+nav {
+  width: 90%;
+  margin: 30px auto;
+  margin-top: 20px;
+}
+
+.global-filters {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.filter-table {
+  width: 90%;
+  border: solid 1px #dee;
+  margin: 30px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.filter-table thead th {
+  padding: 10px;
+  border: solid 1px #dee;
+  background-color: #032e42;
+  color: #336b6b;
+  color: white;
+  text-align: center;
+}
+
+.filter-table tbody td {
+  padding: 10px;
+  border: solid 1px lightblue;
+  color: #333;
+  text-align: center;
+  text-shadow: 1px 1px 1px white;
+}

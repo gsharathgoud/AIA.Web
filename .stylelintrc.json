@@ -1,0 +1,27 @@
+{
+  "ignoreFiles": ["**/*"],
+  "overrides": [
+    {
+      "files": ["**/*.css"],
+      "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+      "rules": {}
+    },
+    {
+      "files": ["**/*.scss"],
+      "extends": [
+        "stylelint-config-standard-scss",
+        "stylelint-config-prettier",
+        "stylelint-config-sass-guidelines",
+        "stylelint-config-idiomatic-order"
+      ],
+      "rules": {
+        "color-hex-case": "lower",
+        "color-named": "always-where-possible",
+        "max-nesting-depth": 8,
+        "order/properties-alphabetical-order": null,
+        "string-quotes": "single"
+      }
+    }
+  ],
+  "rules": {}
+}
