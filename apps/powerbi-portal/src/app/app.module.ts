@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedDataAccessModule } from '@aia.web/shared/data-access';
 import { SharedFeatureModule } from '@aia.web/shared/feature';
@@ -8,6 +9,7 @@ import { SharedUtilsModule } from '@aia.web/shared/utils';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AppMaterialModule } from './app-material.module';
 import { I18nModule } from '../i18n/i18n.module';
 import { ReportsComponent } from './reports/reports.component';
 import { LoginComponent } from './login/login.component';
@@ -29,7 +31,9 @@ import { VisualComponent } from './visual/visual.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    AppMaterialModule,
     HttpClientModule,
     SharedDataAccessModule,
     SharedFeatureModule,

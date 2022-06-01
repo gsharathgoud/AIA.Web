@@ -1,59 +1,34 @@
 /* header styles */
 
-:host {
-  display: block;
-  margin: 50px auto;
-  font-family: sans-serif;
+.logo {
+  height: 120px;
+
+  .logo-image {
+    height: 77px;
+    width: 223px;
+    left: 3px;
+    top: 24px;
+    border-radius: 0px;
+  }
 }
 
-.gutter-left {
-  margin-left: 9px;
-}
+.banner {
+  position: absolute;
+  max-width: 1440px;
+  height: 305.73px;
+  top: 164.32px;
+  z-index: 10;
 
-.col-span-2 {
-  grid-column: span 2;
-}
-
-header {
-  padding: 5px;
-  background-color: #032e42;
-  border-radius: 3px;
-  color: white;
+  background: radial-gradient(
+      86.35% 50% at 50.09% 50%,
+      rgba(34, 190, 202, 0.2) 0%,
+      rgba(51, 240, 255, 0.012) 100%
+    ),
+    #0f2839;
 }
 
 nav {
   width: 90%;
   margin: 30px auto;
   margin-top: 20px;
-}
-
-.global-filters {
-  width: 90%;
-  margin: 30px auto;
-  text-align: center;
-}
-
-.filter-table {
-  width: 90%;
-  border: solid 1px #dee;
-  margin: 30px auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.filter-table thead th {
-  padding: 10px;
-  border: solid 1px #dee;
-  background-color: #032e42;
-  color: #336b6b;
-  color: white;
-  text-align: center;
-}
-
-.filter-table tbody td {
-  padding: 10px;
-  border: solid 1px lightblue;
-  color: #333;
-  text-align: center;
-  text-shadow: 1px 1px 1px white;
 }

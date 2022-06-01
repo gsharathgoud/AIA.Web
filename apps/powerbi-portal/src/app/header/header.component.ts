@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
 import { SetGlobalFilter, IGlobalFilter } from '@aia.web/shared/data-access';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -16,8 +18,16 @@ export class HeaderComponent implements OnInit {
   companyName = { value: 'Company' };
   globalFilters: Observable<[IGlobalFilter]>;
 
-  constructor(private store: Store) {
+  constructor(
+    private store: Store,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer
+  ) {
     this.globalFilters = this.store.select((state) => state.filters.globalFilters);
+    this.matIconRegistry.addSvgIcon(
+      'logo',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/logo.svg')
+    );
   }
 
   setGlobalFilter(filters: IGlobalFilter) {

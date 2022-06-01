@@ -1,14 +1,38 @@
 /* global styles goes here */
 
-body {
-  max-width: 1200px;
+* {
   margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.flex {
-  display: flex;
-  width: 90%;
-  align-items: center;
-  justify-content: center;
+html {
+  background-color: #f2f0eb;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 1440px;
   margin: 0 auto;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+body::after {
+  content: '';
+  background: url(../../assets/vector.svg) no-repeat center center fixed;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  max-width: 1440px;
+  z-index: 9;
+}
+
+main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
