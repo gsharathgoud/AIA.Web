@@ -1,14 +1,20 @@
 <header>
-  <div class="logo">
-    <mat-icon class="logo-image" svgIcon="logo"></mat-icon>
-  </div>
-  <div class="banner flex">
-    <nav>
-      <a class="button" routerLink="/home" routerLinkActive="activebutton">Home</a>
-      &nbsp;
-      <a class="button" routerLink="/login" routerLinkActive="activebutton">Login</a>
-      &nbsp;
-      <a class="button" routerLink="/reports" routerLinkActive="activebutton">Reports</a>
-    </nav>
-  </div>
+  <mat-toolbar color="accent" class="logo">
+    <mat-toolbar-row>
+      <mat-icon class="logo-image" svgIcon="logo"></mat-icon>
+      <mat-icon class="report-image" svgIcon="report"></mat-icon>
+      <mat-icon class="user-image" svgIcon="user"></mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-toolbar color="primary" class="banner flex">
+    <mat-toolbar-row>
+      <nav>
+        <a class="button" routerLink="/home" routerLinkActive="activebutton">Home</a>
+        &nbsp;
+        <a class="button" routerLink="/login" routerLinkActive="activebutton">Login</a>
+        &nbsp;
+        <a class="button" routerLink="/reports" routerLinkActive="activebutton">Reports</a>
+      </nav>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </header>

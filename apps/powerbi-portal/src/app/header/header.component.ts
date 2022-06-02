@@ -28,6 +28,14 @@ export class HeaderComponent implements OnInit {
       'logo',
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/logo.svg')
     );
+    this.matIconRegistry.addSvgIcon(
+      'report',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/report.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      'user',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/user.svg')
+    );
   }
 
   setGlobalFilter(filters: IGlobalFilter) {
