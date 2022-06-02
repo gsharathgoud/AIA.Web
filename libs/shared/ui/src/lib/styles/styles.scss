@@ -17,14 +17,78 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@include mat.core();
+@include mat.core;
+
+$md-aia: (
+  50: #e2e5e7,
+  100: #b7bfc4,
+  200: #87949c,
+  300: #576974,
+  400: #334857,
+  500: #0f2839,
+  600: #0d2433,
+  700: #0b1e2c,
+  800: #081824,
+  900: #040f17,
+  A100: #57abff,
+  A200: #2491ff,
+  A400: #0078f0,
+  A700: #006bd6,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+    A100: #000,
+    A200: #fff,
+    A400: #fff,
+    A700: #fff,
+  ),
+);
+$md-aia-cream: (
+  50: #fdfdfd,
+  100: #fbfbf9,
+  200: #f9f8f5,
+  300: #f6f5f1,
+  400: #f4f2ee,
+  500: #f2f0eb,
+  600: #f0eee9,
+  700: #eeece5,
+  800: #ece9e2,
+  900: #e8e5dd,
+  A100: #fff,
+  A200: #fff,
+  A400: #fff,
+  A700: #fff,
+  contrast: (
+    50: #000,
+    100: #000,
+    200: #000,
+    300: #000,
+    400: #000,
+    500: #000,
+    600: #000,
+    700: #000,
+    800: #000,
+    900: #000,
+    A100: #000,
+    A200: #000,
+    A400: #000,
+    A700: #000,
+  ),
+);
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$powerbi-portal-primary: mat.define-palette(mat.$indigo-palette);
-$powerbi-portal-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$powerbi-portal-primary: mat.define-palette($md-aia);
+$powerbi-portal-accent: mat.define-palette($md-aia-cream);
 
 // The warn palette is optional (defaults to red).
 $powerbi-portal-warn: mat.define-palette(mat.$red-palette);

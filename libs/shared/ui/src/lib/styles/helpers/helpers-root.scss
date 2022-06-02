@@ -4,6 +4,6 @@
 @use './fonts';
 
 // import helpers
-@use './colors';
+@use './colors' as c;
 @use './variables';
 @use './mixins';
