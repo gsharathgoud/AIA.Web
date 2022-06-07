@@ -29,6 +29,10 @@ export class HeaderComponent implements OnInit {
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/logo.svg')
     );
     this.matIconRegistry.addSvgIcon(
+      'logo-mobile',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/logo-mobile.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
       'report',
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/report.svg')
     );

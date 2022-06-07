@@ -6,6 +6,7 @@
   margin: 0 auto;
 }
 
+html,
 body {
   max-width: 1440px;
   min-height: 100vh;
@@ -30,6 +31,7 @@ main {
   z-index: 111;
   width: 100%;
   max-width: 90rem;
+  height: 80vh;
   margin-right: auto;
   margin-left: auto;
   background: white;

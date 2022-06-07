@@ -1,35 +1,18 @@
 /* header styles */
 
-header {
-  max-width: 90rem;
-  height: 22.6vh;
-}
-
+header,
 .logo {
+  max-width: 90rem;
   height: 120px;
 }
 
 .logo-image {
-  position: absolute;
   top: 1%;
   width: 223px;
   height: 77px;
   border-radius: 0;
 }
 
-.banner {
-  position: absolute;
-  z-index: 10;
-  max-width: 90rem;
-  height: 305.73px;
-  background: radial-gradient(86.35% 50% at 50.09% 50%,
-  rgb(34 190 202 / 20%) 0%,
-  rgb(51 240 255 / 1.2%) 100%),
-    #0f2839;
-}
-
-nav {
-  width: 90%;
-  margin: 30px auto;
-  margin-top: 20px;
+.logo-container {
+  width: 100%;
 }

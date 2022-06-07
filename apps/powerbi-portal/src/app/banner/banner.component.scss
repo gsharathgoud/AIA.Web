@@ -1,0 +1,19 @@
+/* banner styles */
+
+.banner {
+  z-index: 10;
+  max-width: 90rem;
+  height: 305.73px;
+  background: radial-gradient(
+      86.35% 50% at 50.09% 50%,
+      rgb(34 190 202 / 20%) 0%,
+      rgb(51 240 255 / 1.2%) 100%
+    ),
+    #0f2839;
+}
+
+nav {
+  width: 90%;
+  margin: 30px auto;
+  margin-top: 20px;
+}

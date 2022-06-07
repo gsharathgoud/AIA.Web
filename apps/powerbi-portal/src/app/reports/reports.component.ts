@@ -52,6 +52,25 @@ export class ReportsComponent implements OnInit {
     settings: undefined,
   };
 
+  paidBasisFilter: models.IBasicFilter = {
+    $schema: 'http://powerbi.com/product/schema#basic',
+    target: {
+      table: 'Measure Group',
+      column: 'Measure',
+    },
+    operator: 'In',
+    values: ['PEPM'],
+    filterType: models.FilterType.Basic,
+    requireSingleSelection: true,
+  };
+
+  globalFilters: models.OnLoadFilters = {
+    allPages: {
+      operation: models.FiltersOperations.ReplaceAll,
+      filters: [this.paidBasisFilter],
+    },
+  };
+
   eventHandlersMap = new Map<string, (event?: service.ICustomEvent<unknown>) => void>([
     ['loaded', () => console.log('Report has loaded')],
     [
@@ -96,6 +115,7 @@ export class ReportsComponent implements OnInit {
       id: reportConfigResponse.Id,
       embedUrl: reportConfigResponse.EmbedUrl,
       accessToken: reportConfigResponse.EmbedToken.Token,
+      filters: this.globalFilters,
       settings: {
         filterPaneEnabled: false,
         layoutType: models.LayoutType.Custom,

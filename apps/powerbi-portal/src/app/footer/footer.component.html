@@ -1,11 +1,13 @@
 <footer>
-  <mat-toolbar color="accent" class="footer-top flex">
-    <mat-toolbar-row> </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-toolbar color="primary" class="footer-links flex">
-    <mat-toolbar-row> </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-toolbar color="accent" class="footer flex">
-    <mat-toolbar-row> </mat-toolbar-row>
-  </mat-toolbar>
+  <div class="footer" [ngStyle.xs]="{ 'height.px': 217 }">
+    <mat-toolbar color="accent" class="footer-top flex" [ngStyle.xs]="{ 'height.px': 18 }">
+      <mat-toolbar-row> </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-toolbar color="primary" class="footer-links flex" [ngStyle.xs]="{ 'height.px': 180 }">
+      <mat-toolbar-row> </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-toolbar color="accent" class="footer-bottom flex" [ngStyle.xs]="{ 'height.px': 19 }">
+      <mat-toolbar-row> </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
 </footer>

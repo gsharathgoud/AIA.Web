@@ -1,24 +1,24 @@
 /* footer styles */
 
-.footer-top {
-  position: absolute;
-  bottom: 500px;
+.footer {
+  bottom: 0;
   max-width: 1440px;
+  height: 400px;
+  text-align: center;
+}
+
+.footer-top {
+  bottom: 500px;
 }
 
 .footer-links {
-  position: absolute;
   bottom: 118px;
-  max-width: 1440px;
   height: 400px;
   background: #0f2839;
-  mix-blend-mode: multiply;
 }
 
-.footer {
-  position: absolute;
+.footer-bottom {
   bottom: 0;
-  max-width: 1440px;
   height: 118px;
   background: #f2f0eb;
 }
